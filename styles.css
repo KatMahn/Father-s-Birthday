@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Indie Flower', serif;
+}
+
+body {
+    background-color: #28282B;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#welcome_page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.envelope {
+    width: 350px;
+}
+
+#welcome_page .happy_birthday {
+    color: #fff;
+    font-size: 3rem;
+}
+
+#welcome_page .btn {
+    margin-left: 25px;
+    width: 305px;
+    height: 48px;
+    border-radius: 10px;
+    margin-top: 40px;
+    background-color: #FDCC0D;
+}
+
+#main_page {
+    width: 612px;
+    height: 810px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 5px solid #FDCC0D;
+    background-color: #fff;
+}
+
+#main_page .message {
+    padding: 10px;
+    font-size: 1.3rem;
+} 
+
+#main_page .back_btn {
+    width: 305px;
+    height: 48px;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: #FDCC0D;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 480px) {
+    #welcome_page {
+        width: 375px;
+        padding: 20px;
+    }
+
+    #welcome_page .envelope {
+        width: 250px;
+        margin-right: 30px;
+    }
+
+    #welcome_page .btn {
+        width: 250px;
+        height: 40px;
+    }
+
+    #main_page {
+        max-width: 375px;
+        height: 1205px;
+    }
+}
